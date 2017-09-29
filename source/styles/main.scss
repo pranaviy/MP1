@@ -1,0 +1,314 @@
+/**all divs on the page automatically have a width equal to the size of the viewport**/
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}
+h5 {
+    margin: 0;
+}
+h6 {
+    margin: 0;
+}
+
+/**stuff related to the top navigation bar**/
+.topnav {
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    z-index: +1;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.topnav a {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.topnav a:hover {
+    color: dimgrey;
+}
+
+.topnav a.active {
+    text-decoration: underline;
+    text-decoration-color: #f2f2f2;
+}
+
+.topnav a.inactive {
+    text-decoration: none;
+}
+
+/**Home section**/
+.sectioninfo {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home {
+    position: relative;
+    display: block;
+    /**image free online, no attribution required*/
+    background-image: url(../assets/woodback.jpg); 
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 2.5vh;
+    font-family: 'Indie Flower', cursive;
+    color: #F5F5F5;
+    padding-top: 8.7vh;
+}
+
+#name {
+    font-size: 8vh;
+    width: 70vw;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#quote {
+    width: 60vw;
+    margin: 0 auto;
+    display: block;
+    font-size: 3vh;
+}
+
+.fa {
+    color: whitesmoke;
+}
+
+.social {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 4vh;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.social li {
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/** About Me Section **/
+.aboutme {
+    position: relative;
+    display: block;
+    /**image free online, no attribution required*/
+    background-color: #424242;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 2.5vh;
+    font-family: monospace;
+    color: #F5F5F5;   
+    padding: 2vw 7vh;
+}
+
+.amsectioninfo {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 900px;
+}
+
+.propic {
+    height: 20vw;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 10vw;
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    display: block;
+    float: left;
+    margin-right: 3vw;
+    margin-bottom: 50vh;
+}
+
+#aboutmeheader {
+    display: block;
+    text-align: left;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+}
+
+#aboutmebio {
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+}
+
+/** Experience Section **/
+.experience {
+    position: relative;
+    display: block;
+    background-color: #E0E0E0;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 2.5vh;
+    font-family: monospace;
+    color: #212121;   
+    padding: 2vw 7vh;
+}
+
+#expheader {
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 4vh;
+    font-size: 2.5vh;    
+}
+
+.jobname {
+    font-size: 3vh;
+    color: #E64A19;
+}
+
+.jobinfo {
+    font-size: 2.5vh;
+    font-style: italic;
+}
+
+.jobdes {
+    font-size: 2vh;
+}
+
+#netmathimg  {
+    float: right;
+    width: 300px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+#illinoisimg  {
+    float: right;
+    width: 100px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+#csillinoisimg  {
+    float: right;
+    width: 300px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+.work {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vh;
+}
+
+#faresume {
+    color: #212121;
+    margin: 0 auto;
+}
+
+#res {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.resume {
+    margin: 3vh auto;
+    padding: 2vh;
+    display: block;
+    background-color: #D84315;
+    text-align: center;
+    font-size: 3vh;
+    width: 10vw;
+    border-radius: 1vw;
+    box-shadow: 1vh 1vw 50px #424242;
+}
+
+.resume a {
+    text-decoration: none; 
+}
+
+
+/** Photo section **/
+.photos {
+    position: relative;
+    display: block;
+    /**image free online, no attribution required*/
+    background-color: #424242;
+    text-align: center;
+    height: 91.3vh;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 2.5vh;
+    font-family: monospace;
+    color: whitesmoke;   
+    padding: 2vw 7vh;
+}
+
+#photoheader {
+    margin-bottom: 6vh;
+}
+
+
+.slideshow-container {
+    width: 80vw;
+    height: 60vh;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/** footer**/
+.footer {
+    position: relative;
+    display: block;
+    background-color: black;
+    text-align: center;
+    height: 4vh;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 2.5vh;
+    font-family: monospace;
+    color: whitesmoke;   
+    padding: 2vw 7vh;
+}
