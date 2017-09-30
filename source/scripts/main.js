@@ -15,19 +15,19 @@ function scrollTo(element, to, duration) {
 //event listeners for all the navigation bar buttons
 var homeButton = document.getElementById("homeb")
 var homeElmnt = document.getElementById("#home");
-homeButton.addEventListener("click", function(){scrollTo(document.body, homeElmnt.offsetTop, 600);}, false);
+homeButton.addEventListener("click", function(){scrollTo(document.documentElement, homeElmnt.offsetTop, 600);}, false);
 
 var aboutMeButton = document.getElementById("aboutmeb")
 var aboutMeElmnt = document.getElementById("#aboutme");
-aboutMeButton.addEventListener("click", function(){scrollTo(document.body, aboutMeElmnt.offsetTop, 600);}, false);
+aboutMeButton.addEventListener("click", function(){scrollTo(document.documentElement, aboutMeElmnt.offsetTop, 600);}, false);
 
 var expButton = document.getElementById("experienceb")
 var experienceElmnt = document.getElementById("#experience");
-expButton.addEventListener("click", function(){scrollTo(document.body, experienceElmnt.offsetTop, 600);}, false);
+expButton.addEventListener("click", function(){scrollTo(document.documentElement, experienceElmnt.offsetTop, 600);}, false);
 
 var photosButton = document.getElementById("photosb")
 var photosElmnt = document.getElementById("#photos");
-photosButton.addEventListener("click", function(){scrollTo(document.body, photosElmnt.offsetTop, 600);}, false);
+photosButton.addEventListener("click", function(){scrollTo(document.documentElement, photosElmnt.offsetTop, 600);}, false);
 
 
 //Set active link initially based on load then on scroll 
