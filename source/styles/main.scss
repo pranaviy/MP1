@@ -131,7 +131,7 @@ h6 {
     /**image free online, no attribution required*/
     background-color: #424242;
     text-align: center;
-    height: 100vh;
+    height: 115vh;
     margin: 0 auto;
     overflow: hidden;
     font-size: 2.5vh;
@@ -151,7 +151,7 @@ h6 {
 .propic {
     height: 20vw;
     width: 20vw;
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
     border-radius: 10vw;
     border-style: solid;
     border-color: white;
@@ -159,13 +159,42 @@ h6 {
     display: block;
     float: left;
     margin-right: 3vw;
-    margin-bottom: 50vh;
+}
+
+#funfacts {
+    height: 45vh;
+    width: 18vw;
+    border-width: medium;
+    margin-bottom: 15vh;
+    display: block;
+    float: left;
+    margin-right: 3vw;
+    padding: 3vh 1vw;
+    clear: both;
+    background-color: #E64A19;
+    border-style: groove;
+    text-align: left;
+}
+
+#song {
+    width: 18vw;
+    height: auto;
+    margin-bottom: 3vh;
+}
+
+.fact {
+    margin-bottom: 0.5vh;
+}
+
+#favequote {
+    font-style: italic;
+    text-align: center;
 }
 
 #aboutmeheader {
     display: block;
     text-align: left;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     font-size: 2.5vh;
 }
 
@@ -173,6 +202,35 @@ h6 {
     margin: 0 auto;
     display: block;
     text-align: left;
+}
+
+.emp {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #E64A19;
+}
+
+#recenteventsheader {
+    display: block;
+    text-align: left;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+    font-size: 2.5vh;
+}
+
+#recenteventsinfo {
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+}
+
+#recenteventsinfo li {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.eventcolor {
+    color: skyblue;
 }
 
 /** Experience Section **/
@@ -277,7 +335,7 @@ h6 {
     /**image free online, no attribution required*/
     background-color: #424242;
     text-align: center;
-    height: 91.3vh;
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     font-size: 2.5vh;
@@ -287,14 +345,20 @@ h6 {
 }
 
 #photoheader {
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
 }
 
+.carousel{
+    overflow:hidden;
+    width: 800px;
+    margin: 0 auto;
+    
+}
 
-.slideshow-container {
-    width: 80vw;
-    height: 60vh;
-    background-color: black;
+.mySlides{
+    display: block;
+    height: 70vh;
+    width: auto;
     margin: 0 auto;
 }
 

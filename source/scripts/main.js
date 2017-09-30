@@ -98,5 +98,33 @@ window.addEventListener('scroll', function(ev) {
         resizeNav("big");
 });
 
-window.onload(resizeNav("big"));
-window.onload(setActive('#home'));
+
+
+var slideIndex = 1;
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  console.log(x);
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var leftButton = document.getElementById("left")
+leftButton.addEventListener("click", function(){plusDivs(-1);}, false);
+
+var rightButton = document.getElementById("right")
+rightButton.addEventListener("click", function(){plusDivs(+1);}, false);
+
+resizeNav("big");
+setActive('#home');
+showDivs(slideIndex);
+//window.onload = start();
